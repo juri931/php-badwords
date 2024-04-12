@@ -6,7 +6,10 @@
 
   $lunghezza_stringa = strlen($paragrafo);
 
-  var_dump("var_dump di paragrafo: ", $paragrafo)
+  $parola_censurata = str_replace($censura, '***', $paragrafo);
+
+  $lunghezza_censurata = strlen($parola_censurata);
+
 
 ?>
 
@@ -30,7 +33,9 @@
   <h3>La lunghezza del paragrafo è di <?php echo $lunghezza_stringa?> caratteri</h3>
 
 
-  <h1>Censura: <?php echo $censura ?></h1>
+  <h1>Censura: <?php echo $parola_censurata ?></h1>
+  <h3>La lunghezza del paragrafo è di <?php echo $lunghezza_censurata?> caratteri</h3>
+
 
 </div>
   
