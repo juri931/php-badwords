@@ -1,10 +1,12 @@
 <?php
   
-  $paragrafo = $_GET["paragrafo"];
+  $paragrafo = $_POST["paragrafo"];
 
-  $censura = $_GET["censura"];
+  $censura = $_POST["censura"];
 
   $lunghezza_stringa = strlen($paragrafo);
+
+  var_dump("var_dump di paragrafo: ", $paragrafo)
 
 ?>
 
@@ -26,6 +28,7 @@
   
   <h1>Paragrafo: <?php echo $paragrafo ?></h1>
   <h3>La lunghezza del paragrafo è di <?php echo $lunghezza_stringa?> caratteri</h3>
+
 
   <h1>Censura: <?php echo $censura ?></h1>
 
