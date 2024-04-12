@@ -26,15 +26,18 @@
 </head>
 <body>
 
-<div class="container m-5 ">
-  <h1 class="my-5">Ed ecco i dati inviati</h1>
+<div class="container m-5">
+  <h1>Ed ecco i dati inviati</h1>
   
-  <h1>Paragrafo: <?php echo $paragrafo ?></h1>
-  <h3>La lunghezza del paragrafo è di <?php echo $lunghezza_stringa?> caratteri</h3>
+  <div  class="my-5">
+    <h1>Paragrafo: <?php echo $paragrafo ?></h1>
+    <h3>La lunghezza del paragrafo è di <?php echo $lunghezza_stringa?> caratteri</h3>
+  </div>
 
-
-  <h1>Censura: <?php echo $parola_censurata ?></h1>
-  <h3>La lunghezza del paragrafo è di <?php echo $lunghezza_censurata?> caratteri</h3>
+  <div class="my-5">
+    <h1>Censura: <?php echo $parola_censurata ?></h1>
+    <h3>La lunghezza della frase censurata è di <?php echo $lunghezza_censurata?> caratteri</h3>
+  </div>
 
 
 </div>
