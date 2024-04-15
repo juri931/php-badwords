@@ -4,6 +4,15 @@
 
   $censura = $_POST["censura"];
 
+  // Controllo che il paragrafo sia stato inserito
+  if(isset($_POST["paragrafo"]) && !empty($_POST["paragrafo"])){
+    $paragrafo = $_POST["paragrafo"];
+
+  } else {
+
+    $paragrafo = "Non hai inserito nessun paragrafo";
+  }
+
   $lunghezza_stringa = strlen($paragrafo);
 
   $parola_censurata = str_replace($censura, '***', $paragrafo);
